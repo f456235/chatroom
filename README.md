@@ -1,29 +1,3 @@
-# Software Studio 2023 Spring Midterm Project
-
-### Scoring
-
-| **Basic components**                             | **Score** | **Check** |
-| :----------------------------------------------- | :-------: | :-------: |
-| Membership Mechanism                             | 15%       | Y         |
-| Firebase page                                    | 5%        | Y         |
-| Database read/write                              | 15%       | Y         |
-| RWD                                              | 15%       | Y         |
-| Chatroom                                         | 20%       | Y         |
-
-| **Advanced tools**                               | **Score** | **Check** |
-| :----------------------------------------------- | :-------: | :-------: |
-| Using React                                      | 10%       | Y         |
-| Third-Party Sign In                              | 1%        | N         |
-| Notification                                     | 5%        | Y         |
-| CSS Animation                                    | 2%        | Y         |
-| Security                                         | 2%        | Y         |
-
-| **Other useful functions**                         | **Score** | **Check** |
-| :----------------------------------------------- | :-------: | :-------: |
-| Name of functions                                  | 1~5%     | Y        |
-
-
----
 
 ### How to use 
 
@@ -32,30 +6,34 @@
 ![](https://i.imgur.com/GJyFZzt.jpg)
 ![](https://i.imgur.com/D4jTMU0.jpg)
 
-從上到下分別是登入、註冊以及主頁面。首先先介紹註冊頁面
+From top to bottom, these are the login page, registration page, and homepage. Let's start by introducing the registration page.
 
-#### 註冊頁面
-註冊頁面有三個欄位可以輸入，分別是使用者的名字，email跟密碼，下方則可以選擇圖片作為自己的哥人圖片。按下sign up 按鈕就可以註冊，並直接跳到主頁面。如果已經註冊過或不符合format，則會跳出通知。另外，如果要前往login page，可以按下方的連結。
+####Registration Page
+The registration page has three input fields: user's name, email, and password. Below that, users can select an image as their profile picture. Clicking the "Sign Up" button will register the user and redirect them to the homepage. If the user is already registered or the input format is invalid, a notification will pop up. To go to the login page, users can click the link at the bottom.
 
-#### 登入頁面
-登入頁面則是email，密碼登入，如果想註冊可以點下方的register前往註冊頁面。
+####Login Page
+The login page allows users to log in with their email and password. If the user wants to register instead, they can click the "Register" link below to go to the registration page.
 
-#### 主頁面包含5個部分。
-1.左上方的資訊欄，左邊是chatroom字樣，右邊有個人圖片跟名字，還有一個logout的按鈕，按下去之後可以回到login page。
+####Homepage – consists of five parts:
+Top Left Info Bar:
+On the left, it shows the word "Chatroom". On the right, it displays the user’s profile picture, name, and a "Logout" button. Clicking the button will redirect the user back to the login page.
 
-2.左側有一個新增聊天室的按鈕，可以創建一個新的聊天室，如果輸入一個已經存在的聊天室名字，則會直接加入。下方有目前這個使用者加入的聊天室，會根據最後更新時間排序，不管是最後新增的聊天室或是新增訊息。點擊其中一欄可以進入那個聊天室聊天。
+Left Sidebar:
+There is a button to create a new chatroom. If the name entered already exists, the user will join that chatroom instead. Below the button is a list of chatrooms the user has joined, sorted by the latest update time—whether it's a newly created room or a new message. Clicking one of the items will enter that chatroom.
 
-3.右側上方欄位的左邊，會顯示目前選擇的聊天室名稱，如果都沒選擇就會像圖中那樣，右邊的圖案可以新增成員進入目前的聊天室，如果使用者不存在或有問題會跳通知。
+Top Right Info Bar:
+On the left, it displays the currently selected chatroom name. If no chatroom is selected, it will appear blank as shown in the image. On the right, there is an icon to add members to the current chatroom. If the user doesn't exist or there's an issue, a notification will appear.
 
-4.右邊粉色區域會有現在聊天室所有的message，每則訊息都會有發送者的名字、圖片還有傳送時間。另外也有把自己傳的跟別人傳的做區分。自己傳的在右邊，別人則是在左邊
+Chat Area (Pink Section on the Right):
+This section shows all messages in the current chatroom. Each message includes the sender’s name, profile picture, and timestamp. Messages sent by the current user appear on the right side, while messages from others appear on the left.
 
-5.右側下方可以輸入文字，也可以上傳圖片，按send可以傳送出去。
+Bottom Right Input Area:
+Users can type text or upload images. Clicking "Send" will send the message.
 
-### Function description
+Function Description
+As a bonus feature, we implemented image messaging and user profile info, including profile pictures and names.
 
-bonus的部分，有做傳圖片以及個人資訊，也就是個人圖片及名稱。
-
-advanced的部分，有用react做components，然後login page跟register page有做css animation，notification以及security也都有。
+As for the advanced part, we used React components. The login and registration pages include CSS animations. Notification and security features are also implemented.
 
 ### Firebase page link
 
